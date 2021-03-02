@@ -1,0 +1,203 @@
+
+body{
+    padding: 1rem 1.5rem;
+    margin: 0;
+    background-color: rgba(231, 231, 231, 0.95);
+    font-family: Verdana, sans-serif;
+
+}
+
+.currentWeatherImage{
+    padding-right: 4rem;
+}
+.close{
+    padding: 1rem;
+}
+div.icon-panel{
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-sub-container{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+    font-weight: bolder;
+}
+div.container{
+    width: 100%;
+    margin: 0;
+}
+
+div.header{
+
+    background-color: #85b3c2;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    box-shadow: 0.2rem 0.4rem rgba(180, 180, 180, 0.99);
+
+}
+
+#heading{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    padding: 2rem;
+}
+
+#last-updated-time{
+    text-align: right;
+    padding: 1rem 1rem 0.5rem 1rem;
+    font-style: italic;
+}
+
+#current-warning-container{
+    width: 9%;
+    background-color: rgb(193, 66, 49);
+    border-radius: 1rem;
+    padding: 0.7rem;
+    margin-left: 2.5rem;
+    font-weight: 800;
+    overflow: visible;
+
+}
+#warning-content{
+    display: none;
+    background-color: rgb(193, 66, 49);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 0.7rem;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    width: 40%;
+    box-shadow: 0.1rem 0.2rem rgba(64, 64, 64, 0.99);
+}
+
+.reload-button{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-weight: bolder;
+}
+
+.display-option{
+    margin: 1rem auto 0 auto ;
+}
+
+.display-option button{
+    margin-right: 1.5rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgba(231, 231, 231, 0.95);
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    outline: none;
+}
+
+.display-option .selected {
+    background-color: white;
+}
+
+.selected {
+    background-color: white;
+}
+
+.unselected {
+    background-color: rgba(231, 231, 231, 0.95);
+}
+
+.HKOData{
+    background-color: white;
+    margin: 0 auto 10rem auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.HKOData .forecast-div{
+    width: 15%;
+    text-align: center;
+    background-color: rgba(237, 226, 248, 0.99);
+    margin: 0.5%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0.2rem 0.4rem rgba(180, 180, 180, 0.99);
+}
+.HKOData .district-data{
+    width: 13%;
+    text-align: center;
+    background-color: rgba(178, 232, 245, 0.8);
+    border-radius: 1rem;
+    margin: 0.5%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: space-around;
+    box-shadow: 0.2rem 0.4rem rgba(180, 180, 180, 0.99);
+}
+
+.HKOData .district-data .close{
+    align-self: flex-end;
+}
+
+.HKOData .district-data h3{
+    text-align: center;
+}
+.forecast-date{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+    .HKOData .district-data{
+        width: 40%;
+        margin: 3%;
+        padding: 2%;
+    }
+
+    .HKOData .forecast-div{
+        width: 40%;
+        margin: 3%;
+        padding: 2%;
+    }
+
+    #current-warning-container{
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 800px) {
+    .HKOData .district-data{
+        width: 25%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .HKOData .forecast-div{
+        width: 25%;
+        margin: 1%;
+        padding: 1%;
+    }
+    #current-warning-container{
+        width: 20%;
+    }
+}
