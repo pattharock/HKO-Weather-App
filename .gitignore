@@ -1,6 +1,6 @@
 # miscellaneous
 /images
-.pdf
+*.pdf
 
 # Logs
 logs
