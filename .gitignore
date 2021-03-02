@@ -1,3 +1,7 @@
+# miscellaneous
+/images
+.pdf
+
 # Logs
 logs
 *.log
